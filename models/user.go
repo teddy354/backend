@@ -12,7 +12,7 @@ type User struct {
 	Phone     string    `json:"phone" gorm:"type : varchar(255)"`
 	Address   string    `json:"address" gorm:"type : text"`
 	Image     string    `json:"image" gorm:"type: varchar(255)"`
-	ListAsID int `json:"list_as_id" gorm:"foreignKey :ID"`
+	ListAsID  int       `json:"list_as_id" gorm:"foreignKey :ID"`
 	ListAs    ListAs    `json:"list_as"`
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"update_at"`

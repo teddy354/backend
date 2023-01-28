@@ -168,3 +168,4 @@ func convertResponse(u models.User) usersdto.UserResponse {
 		Image:    u.Image,
 	}
 }
+
